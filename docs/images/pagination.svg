@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" font-family="sans-serif">
+  <rect x="0" y="0" width="720" height="400" fill="#ffffff"/>
+  <text x="360" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">페이지네이션 개념</text>
+  <text x="360" y="48" text-anchor="middle" font-size="13" fill="#4B5563">전체 27개 글을 10개씩 잘라서 보여줍니다</text>
+
+  <text x="20" y="72" font-size="13" fill="#1f2937">1페이지 (page=1) — skip(0).limit(10)</text>
+  <g>
+    <rect x="30" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="47" y="102" text-anchor="middle" font-size="13" fill="#1f2937">1</text>
+    <rect x="70" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="87" y="102" text-anchor="middle" font-size="13" fill="#1f2937">2</text>
+    <rect x="110" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="127" y="102" text-anchor="middle" font-size="13" fill="#1f2937">3</text>
+    <rect x="150" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="167" y="102" text-anchor="middle" font-size="13" fill="#1f2937">4</text>
+    <rect x="190" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="207" y="102" text-anchor="middle" font-size="13" fill="#1f2937">5</text>
+    <rect x="230" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="247" y="102" text-anchor="middle" font-size="13" fill="#1f2937">6</text>
+    <rect x="270" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="287" y="102" text-anchor="middle" font-size="13" fill="#1f2937">7</text>
+    <rect x="310" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="327" y="102" text-anchor="middle" font-size="13" fill="#1f2937">8</text>
+    <rect x="350" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="367" y="102" text-anchor="middle" font-size="13" fill="#1f2937">9</text>
+    <rect x="390" y="80" width="34" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="407" y="102" text-anchor="middle" font-size="12" fill="#1f2937">10</text>
+  </g>
+
+  <text x="20" y="152" font-size="13" fill="#1f2937">2페이지 (page=2) — skip(10).limit(10)</text>
+  <g>
+    <rect x="30" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="47" y="182" text-anchor="middle" font-size="12" fill="#1f2937">11</text>
+    <rect x="70" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="87" y="182" text-anchor="middle" font-size="12" fill="#1f2937">12</text>
+    <rect x="110" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="127" y="182" text-anchor="middle" font-size="12" fill="#1f2937">13</text>
+    <rect x="150" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="167" y="182" text-anchor="middle" font-size="12" fill="#1f2937">14</text>
+    <rect x="190" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="207" y="182" text-anchor="middle" font-size="12" fill="#1f2937">15</text>
+    <rect x="230" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="247" y="182" text-anchor="middle" font-size="12" fill="#1f2937">16</text>
+    <rect x="270" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="287" y="182" text-anchor="middle" font-size="12" fill="#1f2937">17</text>
+    <rect x="310" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="327" y="182" text-anchor="middle" font-size="12" fill="#1f2937">18</text>
+    <rect x="350" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="367" y="182" text-anchor="middle" font-size="12" fill="#1f2937">19</text>
+    <rect x="390" y="160" width="34" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="407" y="182" text-anchor="middle" font-size="12" fill="#1f2937">20</text>
+  </g>
+
+  <text x="20" y="232" font-size="13" fill="#1f2937">3페이지 (page=3) — skip(20).limit(10) (남은 7개)</text>
+  <g>
+    <rect x="30" y="240" width="34" height="34" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/><text x="47" y="262" text-anchor="middle" font-size="12" fill="#1f2937">21</text>
+    <rect x="70" y="240" width="34" height="34" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/><text x="87" y="262" text-anchor="middle" font-size="12" fill="#1f2937">22</text>
+    <rect x="110" y="240" width="34" height="34" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/><text x="127" y="262" text-anchor="middle" font-size="12" fill="#1f2937">23</text>
+    <rect x="150" y="240" width="34" height="34" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/><text x="167" y="262" text-anchor="middle" font-size="12" fill="#1f2937">24</text>
+    <rect x="190" y="240" width="34" height="34" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/><text x="207" y="262" text-anchor="middle" font-size="12" fill="#1f2937">25</text>
+    <rect x="230" y="240" width="34" height="34" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/><text x="247" y="262" text-anchor="middle" font-size="12" fill="#1f2937">26</text>
+    <rect x="270" y="240" width="34" height="34" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/><text x="287" y="262" text-anchor="middle" font-size="12" fill="#1f2937">27</text>
+  </g>
+
+  <rect x="280" y="310" width="42" height="34" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/><text x="301" y="332" text-anchor="middle" font-size="13" fill="#1f2937">1</text>
+  <rect x="330" y="310" width="42" height="34" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><text x="351" y="332" text-anchor="middle" font-size="13" fill="#1f2937">2</text>
+  <rect x="380" y="310" width="42" height="34" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/><text x="401" y="332" text-anchor="middle" font-size="13" fill="#1f2937">3</text>
+  <text x="360" y="368" text-anchor="middle" font-size="12" fill="#6B7280" font-family="monospace">클릭 시 GET /api/posts?page=번호 재요청</text>
+</svg>

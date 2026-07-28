@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>글쓰기</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>글쓰기</h1>
+<form id="writeForm">
+  <label>닉네임 <input type="text" id="nickname" required></label>
+  <label>비밀번호 <input type="password" id="password" required minlength="4"></label>
+  <label>제목 <input type="text" id="title" required></label>
+  <label>내용 <textarea id="content" required></textarea></label>
+  <button type="submit">등록</button>
+</form>
+<p id="errorMsg" class="error"></p>
+<script src="write.js"></script>
+</body>
+</html>

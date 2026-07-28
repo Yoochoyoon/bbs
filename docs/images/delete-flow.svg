@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" font-family="sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="700" fill="#ffffff"/>
+  <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">Delete — 글 삭제 (비밀번호 검증 포함, DELETE)</text>
+
+  <rect x="180" y="50" width="340" height="50" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="350" y="80" text-anchor="middle" font-size="13" fill="#1f2937">[삭제] 버튼 클릭 → 비밀번호 "1234" 입력</text>
+
+  <line x1="350" y1="100" x2="350" y2="133" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="180" y="135" width="340" height="55" rx="10" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <text x="350" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f2937">DELETE /api/posts/5</text>
+  <text x="350" y="176" text-anchor="middle" font-size="12" font-family="monospace" fill="#374151">{ "password": "1234" }</text>
+
+  <line x1="350" y1="190" x2="350" y2="223" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="140" y="225" width="420" height="45" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="350" y="252" text-anchor="middle" font-size="13" fill="#1f2937">Update와 동일 방식으로 비밀번호 해시 비교</text>
+
+  <line x1="350" y1="270" x2="350" y2="298" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <polygon points="350,295 440,343 350,391 260,343" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+  <text x="350" y="338" text-anchor="middle" font-size="13" fill="#1f2937">같은가?</text>
+
+  <line x1="270" y1="360" x2="180" y2="413" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="165" y="395" font-size="13" fill="#DC2626" font-weight="bold">다름</text>
+
+  <line x1="430" y1="360" x2="520" y2="413" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="490" y="395" font-size="13" fill="#16A34A" font-weight="bold">같음</text>
+
+  <rect x="30" y="415" width="290" height="70" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="175" y="440" text-anchor="middle" font-size="13" fill="#1f2937">403 "비밀번호가 틀렸습니다"</text>
+  <text x="175" y="460" text-anchor="middle" font-size="12" fill="#4B5563">DB 변경 없음, 여기서 종료</text>
+
+  <rect x="380" y="415" width="290" height="55" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="525" y="438" text-anchor="middle" font-size="12" font-family="monospace" fill="#1f2937">db.collection('posts')</text>
+  <text x="525" y="456" text-anchor="middle" font-size="12" font-family="monospace" fill="#1f2937">  .deleteOne({_id:5})</text>
+
+  <line x1="525" y1="470" x2="525" y2="503" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="380" y="505" width="290" height="50" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="525" y="535" text-anchor="middle" font-size="13" fill="#1f2937">MongoDB: 5번 글 문서가 통째로 삭제됨</text>
+
+  <line x1="525" y1="555" x2="525" y2="588" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="400" y="590" width="250" height="45" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="525" y="617" text-anchor="middle" font-size="13" fill="#1f2937">200 OK 응답</text>
+
+  <line x1="525" y1="635" x2="525" y2="655" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="525" y="678" text-anchor="middle" font-size="13" fill="#1f2937">index.html(글 목록)으로 이동</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 780" font-family="sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="780" fill="#ffffff"/>
+  <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">Update — 글 수정 (비밀번호 검증 포함, PUT)</text>
+
+  <rect x="150" y="50" width="400" height="55" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="350" y="73" text-anchor="middle" font-size="13" fill="#1f2937">edit.html: [수정] 버튼 클릭 → 비밀번호 팝업</text>
+  <text x="350" y="91" text-anchor="middle" font-size="12" fill="#4B5563">새 제목/내용도 함께 입력</text>
+
+  <line x1="350" y1="105" x2="350" y2="138" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="130" y="140" width="440" height="70" rx="10" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <text x="150" y="163" font-size="13" font-weight="bold" fill="#1f2937">PUT /api/posts/5</text>
+  <text x="150" y="183" font-size="12" font-family="monospace" fill="#374151">{ "password":"1234", "title":"수정된 제목",</text>
+  <text x="150" y="200" font-size="12" font-family="monospace" fill="#374151">  "content":"수정된 내용" }</text>
+
+  <line x1="350" y1="210" x2="350" y2="243" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="150" y="245" width="400" height="45" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="350" y="272" text-anchor="middle" font-size="13" fill="#1f2937">① DB에서 5번 글의 passwordHash 조회</text>
+
+  <line x1="350" y1="290" x2="350" y2="323" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="150" y="325" width="400" height="45" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="350" y="352" text-anchor="middle" font-size="13" fill="#1f2937">② 입력한 "1234"를 같은 방식으로 해시 변환</text>
+
+  <line x1="350" y1="370" x2="350" y2="398" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <polygon points="350,395 440,443 350,491 260,443" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+  <text x="350" y="438" text-anchor="middle" font-size="13" fill="#1f2937">두 해시가</text>
+  <text x="350" y="456" text-anchor="middle" font-size="13" fill="#1f2937">같은가?</text>
+
+  <line x1="270" y1="460" x2="180" y2="513" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="165" y="495" font-size="13" fill="#DC2626" font-weight="bold">다름</text>
+
+  <line x1="430" y1="460" x2="520" y2="513" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="490" y="495" font-size="13" fill="#16A34A" font-weight="bold">같음</text>
+
+  <!-- 실패 branch -->
+  <rect x="30" y="515" width="290" height="70" rx="10" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="175" y="540" text-anchor="middle" font-size="13" fill="#1f2937">403 "비밀번호가 틀렸습니다"</text>
+  <text x="175" y="560" text-anchor="middle" font-size="12" fill="#4B5563">DB 변경 없음, 여기서 종료</text>
+
+  <!-- 성공 branch -->
+  <rect x="380" y="515" width="290" height="60" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="525" y="538" text-anchor="middle" font-size="12" font-family="monospace" fill="#1f2937">updateOne({_id:5},</text>
+  <text x="525" y="558" text-anchor="middle" font-size="12" font-family="monospace" fill="#1f2937">{$set:{title,content}})</text>
+
+  <line x1="525" y1="575" x2="525" y2="608" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="400" y="610" width="250" height="45" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="525" y="637" text-anchor="middle" font-size="13" fill="#1f2937">200 OK 응답</text>
+
+  <line x1="525" y1="655" x2="525" y2="688" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="380" y="690" width="290" height="55" rx="10" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="525" y="713" text-anchor="middle" font-size="13" fill="#1f2937">post.html(글 상세)로 이동</text>
+  <text x="525" y="731" text-anchor="middle" font-size="12" fill="#4B5563">수정된 내용 표시</text>
+</svg>

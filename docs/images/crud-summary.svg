@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="800" height="520" fill="#ffffff"/>
+  <text x="400" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">CRUD 전체 한눈에 보기 (MongoDB)</text>
+
+  <!-- Center API box -->
+  <rect x="300" y="20" width="200" height="460" rx="12" fill="#F3F4F6" stroke="#4B5563" stroke-width="2"/>
+  <text x="400" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2937">Vercel</text>
+  <text x="400" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2937">Serverless</text>
+  <text x="400" y="290" text-anchor="middle" font-size="12" fill="#4B5563">Functions (/api)</text>
+
+  <!-- Row 1: Create -->
+  <rect x="20" y="40" width="230" height="55" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="135" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2937">C 글쓰기</text>
+  <text x="135" y="80" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">POST /api/posts</text>
+  <line x1="250" y1="67" x2="296" y2="67" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="504" y1="67" x2="550" y2="67" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="552" y="40" width="228" height="55" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+  <text x="666" y="72" text-anchor="middle" font-size="12" font-family="monospace" fill="#1f2937">insertOne() — 새 문서 추가</text>
+
+  <!-- Row 2: Read list -->
+  <rect x="20" y="130" width="230" height="55" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="135" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2937">R 목록 조회</text>
+  <text x="135" y="170" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">GET /api/posts</text>
+  <line x1="250" y1="157" x2="296" y2="157" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="504" y1="157" x2="550" y2="157" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="552" y="130" width="228" height="55" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="666" y="162" text-anchor="middle" font-size="12" font-family="monospace" fill="#1f2937">find() — 여러 문서 일부만</text>
+
+  <!-- Row 3: Read detail -->
+  <rect x="20" y="220" width="230" height="55" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="135" y="242" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2937">R 상세 조회</text>
+  <text x="135" y="260" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">GET /api/posts/[id]</text>
+  <line x1="250" y1="247" x2="296" y2="247" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="504" y1="247" x2="550" y2="247" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="552" y="220" width="228" height="55" rx="8" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+  <text x="666" y="242" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">findOne() 1건</text>
+  <text x="666" y="260" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">+ updateOne($inc 조회수)</text>
+
+  <!-- Row 4: Update -->
+  <rect x="20" y="310" width="230" height="55" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="135" y="332" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2937">U 글 수정</text>
+  <text x="135" y="350" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">PUT /api/posts/[id]</text>
+  <line x1="250" y1="337" x2="296" y2="337" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="504" y1="337" x2="550" y2="337" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="552" y="310" width="228" height="55" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="666" y="332" text-anchor="middle" font-size="12" fill="#1f2937">비밀번호 확인 후</text>
+  <text x="666" y="350" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">updateOne($set)</text>
+
+  <!-- Row 5: Delete -->
+  <rect x="20" y="400" width="230" height="55" rx="8" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="135" y="422" text-anchor="middle" font-size="12" font-weight="bold" fill="#1f2937">D 글 삭제</text>
+  <text x="135" y="440" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">DELETE /api/posts/[id]</text>
+  <line x1="250" y1="427" x2="296" y2="427" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="504" y1="427" x2="550" y2="427" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="552" y="400" width="228" height="55" rx="8" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="666" y="422" text-anchor="middle" font-size="12" fill="#1f2937">비밀번호 확인 후</text>
+  <text x="666" y="440" text-anchor="middle" font-size="11" font-family="monospace" fill="#1f2937">deleteOne() — 문서 제거</text>
+
+  <text x="400" y="500" text-anchor="middle" font-size="12" fill="#6B7280">브라우저 요청(왼쪽) → Serverless Function(가운데) → MongoDB 명령(오른쪽)</text>
+</svg>

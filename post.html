@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>글 상세</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="postDetail"></div>
+<div>
+  <button id="editBtn" type="button">수정</button>
+  <button id="deleteBtn" type="button">삭제</button>
+  <a href="index.html"><button type="button">목록</button></a>
+</div>
+<hr>
+<h3>댓글</h3>
+<ul id="commentList"></ul>
+<form id="commentForm">
+  <input type="text" id="commentNickname" placeholder="닉네임" required>
+  <input type="text" id="commentContent" placeholder="댓글 내용" required>
+  <button type="submit">댓글 등록</button>
+</form>
+<p id="errorMsg" class="error"></p>
+<script src="post.js"></script>
+</body>
+</html>

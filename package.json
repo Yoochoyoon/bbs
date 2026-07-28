@@ -1,0 +1,19 @@
+{
+  "name": "04-bbs",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test test/",
+    "check-db": "node -r dotenv/config scripts/check-db.js dotenv_config_path=.env.local",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "vercel": "^37.0.0"
+  }
+}

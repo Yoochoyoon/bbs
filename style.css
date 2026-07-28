@@ -1,0 +1,14 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+table { width: 100%; border-collapse: collapse; }
+th, td { border-bottom: 1px solid #ddd; padding: 8px; text-align: left; }
+.toolbar { display: flex; gap: 8px; margin-bottom: 12px; }
+form label { display: block; margin-bottom: 10px; }
+form input, form textarea { width: 100%; padding: 6px; box-sizing: border-box; }
+textarea { min-height: 120px; }
+.error { color: #DC2626; }
+#pagination button { margin-right: 4px; }

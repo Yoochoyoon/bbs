@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>게시판</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>게시판</h1>
+<div class="toolbar">
+  <input id="searchInput" type="text" placeholder="제목 검색">
+  <button id="searchBtn">검색</button>
+  <a href="write.html"><button type="button">글쓰기</button></a>
+</div>
+<table>
+  <thead><tr><th>제목</th><th>작성자</th><th>조회수</th><th>작성일</th></tr></thead>
+  <tbody id="postList"></tbody>
+</table>
+<div id="pagination"></div>
+<script src="index.js"></script>
+</body>
+</html>
