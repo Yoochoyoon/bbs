@@ -6,14 +6,28 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>글 수정</h1>
-<form id="editForm">
-  <label>비밀번호 <input type="password" id="password" required minlength="4"></label>
-  <label>제목 <input type="text" id="title" required></label>
-  <label>내용 <textarea id="content" required></textarea></label>
-  <button type="submit">수정 완료</button>
-</form>
-<p id="errorMsg" class="error"></p>
+<div class="page-shell">
+<header class="nav-bar">
+  <div class="logo-pill">BBS</div>
+  <nav class="nav-links">
+    <a href="index.html">HOME</a>
+    <a href="write.html">WRITE</a>
+  </nav>
+</header>
+<main class="content">
+<div class="panel form-panel">
+  <div class="section-label-bar">글 수정</div>
+  <form id="editForm">
+    <label class="field-label">비밀번호 <input type="password" id="password" required minlength="4"></label>
+    <label class="field-label">제목 <input type="text" id="title" required></label>
+    <label class="field-label">내용 <textarea id="content" required></textarea></label>
+    <button type="submit">수정 완료</button>
+  </form>
+  <p id="errorMsg" class="error"></p>
+</div>
+</main>
+<footer class="footer-bar">STYLE: NINTENDO-2001 · LEARNING PROJECT</footer>
+</div>
 <script src="edit.js"></script>
 </body>
 </html>

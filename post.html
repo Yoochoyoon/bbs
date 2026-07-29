@@ -6,21 +6,34 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="postDetail"></div>
-<div>
+<div class="page-shell">
+<header class="nav-bar">
+  <div class="logo-pill">BBS</div>
+  <nav class="nav-links">
+    <a href="index.html">HOME</a>
+    <a href="write.html">WRITE</a>
+  </nav>
+</header>
+<main class="content">
+<div class="panel" id="postDetail"></div>
+<div class="action-row">
   <button id="editBtn" type="button">수정</button>
   <button id="deleteBtn" type="button">삭제</button>
   <a href="index.html"><button type="button">목록</button></a>
 </div>
-<hr>
-<h3>댓글</h3>
-<ul id="commentList"></ul>
-<form id="commentForm">
-  <input type="text" id="commentNickname" placeholder="닉네임" required>
-  <input type="text" id="commentContent" placeholder="댓글 내용" required>
-  <button type="submit">댓글 등록</button>
-</form>
+<div class="panel">
+  <div class="section-label-bar">댓글</div>
+  <ul id="commentList"></ul>
+  <form id="commentForm">
+    <input type="text" id="commentNickname" placeholder="닉네임" required>
+    <input type="text" id="commentContent" placeholder="댓글 내용" required>
+    <button type="submit">댓글 등록</button>
+  </form>
+</div>
 <p id="errorMsg" class="error"></p>
+</main>
+<footer class="footer-bar">STYLE: NINTENDO-2001 · LEARNING PROJECT</footer>
+</div>
 <script src="post.js"></script>
 </body>
 </html>
